@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/css/bootstrap.min.css"
+          asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+          asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+    <link rel="stylesheet" href="assets/css/index.css" type="text/css" />
+    <meta charset="utf-8" />
+    <title>Figure Test</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.6/bootstrap.min.js"
+            asp-fallback-src="~/lib/bootstrap/dist/js/bootstrap.min.js"
+            asp-fallback-test="window.jQuery && window.jQuery.fn && window.jQuery.fn.modal">
+    </script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/controllers/figureController.js"></script>
+</head>
+<body ng-controller="figureController as vm">
+    <div class="test-figure-title">Check Sides Test Exam</div>
+    <div class="test-figure-author">by: Gerwin Lorenzo</div>
+    <form name="figureForm" role="form" ng-submit="vm.checkFigure(figureForm.$valid)" novalidate="novalidate">
+        <div class="form-body">
+            <div class="form-group form-input">
+                <label class="form-label-text" for="input-side1">First Side</label>
+                <input id="input-side1"
+                       name="side1Input"
+                       type="text"
+                       class="form-input-sides"
+                       placeholder="Enter side one"
+                       required
+                       ng-model="vm.side1" />
+                <div ng-show="figureForm.side1Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
+                    <div class="form-error-text">This field is required.</div>
+                </div>
+                <label class="form-label-text" for="input-side2">Second Side</label>
+                <input id="input-side2"
+                       name="side2Input"
+                       type="text"
+                       class="form-input-sides"
+                       placeholder="Enter side two"
+                       required
+                       ng-model="vm.side2" />
+                <div ng-show="figureForm.side2Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
+                    <div class="form-error-text">This field is required.</div>
+                </div>
+                <label class="form-label-text" for="input-side3">Third Side</label>
+                <input id="input-side3"
+                       name="side3Input"
+                       type="text"
+                       class="form-input-sides"
+                       placeholder="Enter side three"
+                       required
+                       ng-model="vm.side3" />
+                <div ng-show="figureForm.side3Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
+                    <div class="form-error-text">This field is required.</div>
+                </div>
+                <label class="form-label-text" for="input-side4">Fourth Side</label>
+                <input id="input-side4"
+                       name="side4Input"
+                       type="text"
+                       class="form-input-sides"
+                       placeholder="Enter side four"
+                       ` required
+                       ng-model="vm.side4" />
+                <div ng-show="figureForm.side4Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
+                    <div class="form-error-text">This field is required.</div>
+                </div>
+                <button class="btn btn-primary btn-inverse btn-figure-inputs">Test</button>
+                <br />
+            </div>
+            <div class="form-kind-message" ng-show="vm.checkResult != ''">
+                <p>{{vm.checkResult}}</p>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

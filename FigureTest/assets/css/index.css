@@ -1,0 +1,73 @@
+﻿.test-figure-title {
+    padding-top: 50px;
+    text-align: center;
+    font-size: 28px;
+    color: #4A4E59;
+    background-color: #F0F4FB;
+}
+
+.test-figure-author {
+    padding-bottom: 35px;
+    text-align: center;
+    font-size: 18px;
+    background-color: #F0F4FB;
+}
+
+.form-body {
+    font-size: 20px;
+    padding-top: 10px;
+    min-height: 800px;
+    background-color: #F0F0E0;
+}
+
+.form-control {
+    border: 1px solid #4A4E59;
+}
+
+.form-label-text {
+    font-weight: 400;
+    color: #4A4E59;
+}
+
+.form-input {
+    display: block;
+    margin: 0 auto;
+    width: 280px;
+    margin-bottom: 20px;
+}
+
+.form-error-text {
+    color: #F80D5E;
+    margin-top: 5px;
+}
+
+.form-input-sides {
+    height: 40px;
+    border-radius: 8px;
+}
+
+.form-kind-message{
+    padding-top: 80px;
+    text-align: center;
+    color: blue;
+}
+
+.form-label-text {
+    margin-top: 25px;
+    font-weight: 400;
+    color: #4A4E59;
+}
+
+.btn-figure-inputs {
+    margin-top: 30px;
+    width: 125px;
+    height: 38px;
+    background: #11D4CD;
+    border: 1px solid #11D4CD;
+    border-radius: 25px;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+    outline: none;
+    float: right;
+}
