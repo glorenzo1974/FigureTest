@@ -24,13 +24,7 @@
         }
 
         function checkRectangle(a, b, c, d) {
-            if (a == b && c == d) {
-                return true;
-            }
-            else if (a == d && c == b) {
-                return true;
-            }
-            else if (a == c && d == b) {
+            if (a == c && b == d) {
                 return true;
             }
             return false;
