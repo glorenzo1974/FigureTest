@@ -27,6 +27,7 @@
                        type="text"
                        class="form-input-sides"
                        placeholder="Enter side one"
+                       pattern="[0-9]+"
                        required
                        ng-model="vm.side1" />
                 <div ng-show="figureForm.side1Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
@@ -38,6 +39,7 @@
                        type="text"
                        class="form-input-sides"
                        placeholder="Enter side two"
+                       pattern="[0-9]+"
                        required
                        ng-model="vm.side2" />
                 <div ng-show="figureForm.side2Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
@@ -49,6 +51,7 @@
                        type="text"
                        class="form-input-sides"
                        placeholder="Enter side three"
+                       pattern="[0-9]+"
                        required
                        ng-model="vm.side3" />
                 <div ng-show="figureForm.side3Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
@@ -60,7 +63,8 @@
                        type="text"
                        class="form-input-sides"
                        placeholder="Enter side four"
-                       ` required
+                       pattern="[0-9]+"
+                     ` required
                        ng-model="vm.side4" />
                 <div ng-show="figureForm.side4Input.$invalid && figureForm.$submitted" class="my-messages" role="alert">
                     <div class="form-error-text">This field is required.</div>
